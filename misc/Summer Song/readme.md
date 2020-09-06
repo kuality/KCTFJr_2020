@@ -2,18 +2,6 @@
 
 
 
-Description:
-
-```
-Difficulty: Easy
-
-여기서 내 여름 최애곡 찾아줄사람ლ(╹◡╹ლ) 유튜브 링크만 찾아주라!!!
-
-답 형식: KCTFJr{곡명}, 단 영어이름으로 기재, 모든 문자는 대문자입니다. ex) KCTFJr{SUMMER_SONG}
-
-Author: dubini0
-```
-
 
 
 문제 : favorite_song.zip
