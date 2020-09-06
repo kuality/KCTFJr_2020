@@ -1,0 +1,10 @@
+Crypto 1
+	Easy Caesar
+		Caesar array:
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+*ignore etc*
+
+		Question : KCTFJr{H98X9W, S5ymnsl rzhm};
+
+		Answer: KCTFJr{C43S4R, N0thing much}
+

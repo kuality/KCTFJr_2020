@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  block:
+    build:
+      context: ./Block
+      dockerfile: ./Dockerfile
+    ports:
+      - "12357:12345"
+  find:
+    build:
+      context: ./Lukkky
+      dockerfile: ./Dockerfile
+    ports:
+      - "12356:12345"

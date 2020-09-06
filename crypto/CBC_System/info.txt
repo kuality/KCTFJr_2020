@@ -1,0 +1,7 @@
+CBC_System
+
+ALL you need is scissors.
+
+Block Length : 4
+MAC output form: Hex without "0x"
+

@@ -1,0 +1,76 @@
+flag:
+        .string "@rob[lyXWq6yp3N2"
+.LC0:
+        .string "%s"
+main:
+        push    rbp
+        mov     rbp, rsp
+        sub     rsp, 16
+        mov     DWORD PTR [rbp-4], 0
+        jmp     .L2
+.L6:
+        mov     ecx, DWORD PTR [rbp-4]
+        mov     edx, 1431655766
+        mov     eax, ecx
+        imul    edx
+        mov     eax, ecx
+        sar     eax, 31
+        sub     edx, eax
+        mov     eax, edx
+        mov     edx, eax
+        add     edx, edx
+        add     edx, eax
+        mov     eax, ecx
+        sub     eax, edx
+        cmp     eax, 1
+        je      .L3
+        cmp     eax, 2
+        je      .L4
+        test    eax, eax
+        jne     .L5
+        mov     eax, DWORD PTR [rbp-4]
+        cdqe
+        movzx   eax, BYTE PTR flag[rax]
+        mov     edx, eax
+        mov     eax, DWORD PTR [rbp-4]
+        sub     edx, eax
+        mov     eax, edx
+        mov     edx, eax
+        mov     eax, DWORD PTR [rbp-4]
+        cdqe
+        mov     BYTE PTR flag[rax], dl
+        jmp     .L5
+.L3:
+        mov     eax, DWORD PTR [rbp-4]
+        cdqe
+        movzx   eax, BYTE PTR flag[rax]
+        mov     edx, eax
+        mov     eax, DWORD PTR [rbp-4]
+        add     eax, edx
+        mov     edx, eax
+        mov     eax, DWORD PTR [rbp-4]
+        cdqe
+        mov     BYTE PTR flag[rax], dl
+        jmp     .L5
+.L4:
+        mov     eax, DWORD PTR [rbp-4]
+        cdqe
+        movzx   eax, BYTE PTR flag[rax]
+        mov     edx, DWORD PTR [rbp-4]
+        xor     edx, eax
+        mov     eax, DWORD PTR [rbp-4]
+        cdqe
+        mov     BYTE PTR flag[rax], dl
+        nop
+.L5:
+        add     DWORD PTR [rbp-4], 1
+.L2:
+        cmp     DWORD PTR [rbp-4], 15
+        jle     .L6
+        mov     esi, OFFSET FLAT:flag
+        mov     edi, OFFSET FLAT:.LC0
+        mov     eax, 0
+        call    printf
+        mov     eax, 0
+        leave
+        ret

@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  crypto2:
+    build:
+      context: ./crypto2
+      dockerfile: ./Dockerfile
+    ports:
+      - "12360:12345"
+
+  cbc:
+    build:
+      context: ./CBC_System
+      dockerfile: ./Dockerfile
+    ports:
+      - "12361:12345"      

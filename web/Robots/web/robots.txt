@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /flag_15_h3r3_but_no_guess.html

@@ -1,0 +1,50 @@
+version: "3.8"
+services:
+  attack:
+    build:
+      context: ./attack
+      dockerfile: ./Dockerfile
+    ports:
+      - "12352:12345"
+      
+  babyonfire:
+    build:
+      context: ./babyonfire
+      dockerfile: ./Dockerfile
+    ports:
+      - "12346:12345"
+  
+  note:
+    build:
+      context: ./note
+      dockerfile: ./Dockerfile
+    ports:
+      - "12347:12345"
+
+  pwn1:
+    build:
+      context: ./pwn1
+      dockerfile: ./Dockerfile
+    ports:
+      - "12348:12345"
+
+  pwn2:
+    build:
+      context: ./pwn2
+      dockerfile: ./Dockerfile
+    ports:
+      - "12349:12345"
+
+  summer_party:
+    build:
+      context: ./summer_party
+      dockerfile: ./Dockerfile
+    ports:
+      - "12350:12345"
+
+  imsorry:
+    build:
+      context: ./imsorry
+      dockerfile: ./Dockerfile
+    ports:
+      -  "12353:12345"

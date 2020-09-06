@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+    chall:
+        build:
+            context: ./secret_value
+            dockerfile: ./Dockerfile
+        ports:
+            - "12351:12345"

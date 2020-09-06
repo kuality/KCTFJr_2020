@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  block:
+    build:
+      context: ./chicken
+      dockerfile: ./Dockerfile
+    ports:
+      - "12362:12345"
+
