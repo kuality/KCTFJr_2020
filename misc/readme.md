@@ -1,6 +1,9 @@
+## Usage
+```
+$ sudo docker-compose up -d
+```
+
 ### Summer Song
-
-
 
 Description:
 
@@ -15,16 +18,9 @@ Author: dubini0
 ```
 
 
-
-
-
-
 ### BINGSOO
 
-
-
 Description:
-
 ```
 Difficulty: Easy
 
