@@ -1,5 +1,5 @@
-# KCTF2020-1
-KCTF 2020 1학년 문제
+# KCTFJr2020
+KCTFJr 2020
 
 ## Web
 - First-RCE
@@ -38,5 +38,5 @@ KCTF 2020 1학년 문제
 ## Usage
 For each category
 ```shell
-$ sudo docker-compose up
+$ sudo docker-compose up -d
 ```
