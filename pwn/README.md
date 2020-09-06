@@ -1,3 +1,5 @@
+## Usage
+`$ sudo docker-compose up -d `
 
 ### ImSorry
 Description:
